@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media screen and (max-width: 750px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.header {
+  padding: 2rem 10rem;
+  height: 100vh;
+  background-color: #97b1a6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  text-align: center; }
+  @media screen and (max-width: 750px) {
+    .header {
+      padding: 10rem 4rem 4rem; } }
+  .header h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+    font-weight: 500; }
+    @media screen and (max-width: 750px) {
+      .header h1 {
+        line-height: 1.5; } }
+  .header h2 {
+    font-size: 3.5rem;
+    font-weight: 300; }
+  .header .logo {
+    width: 15rem; }
+    @media screen and (max-width: 750px) {
+      .header .logo {
+        width: 10rem; } }
+
+.shake {
+  animation: shake-animation 4.72s ease infinite;
+  transform-origin: 50% 50%; }
+
+@keyframes shake-animation {
+  0% {
+    transform: translate(0, 0); }
+  1.78571% {
+    transform: translate(5px, 0); }
+  3.57143% {
+    transform: translate(0, 0); }
+  5.35714% {
+    transform: translate(5px, 0); }
+  7.14286% {
+    transform: translate(0, 0); }
+  8.92857% {
+    transform: translate(5px, 0); }
+  10.71429% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(0, 0); } }
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  padding: 6rem 10rem;
+  background-color: #c9c5ba;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200; }
+  @media screen and (max-width: 750px) {
+    .main {
+      grid-template-columns: 1;
+      grid-column-gap: 4rem;
+      grid-row-gap: 4rem;
+      padding: 6rem 4rem; } }
+  .main p {
+    margin-bottom: 2rem;
+    line-height: 1.8; }
+  .main img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #02111b; }
+  .main .first,
+  .main .second {
+    grid-column: span 2;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center; }
+    @media screen and (max-width: 750px) {
+      .main .first,
+      .main .second {
+        grid-template-columns: 100%; } }
+  .main .third {
+    grid-column: span 2; }
+  .main .small-gallery {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 33%);
+    margin: 4rem 0;
+    align-items: center; }
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 10rem;
+  background-color: #407076;
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  text-align: center; }
+  @media screen and (max-width: 750px) {
+    .footer {
+      flex-direction: column; } }
+  .footer .social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem; }
+    .footer .social i {
+      color: #02111b;
+      margin: 0 1rem; }
+      @media screen and (max-width: 750px) {
+        .footer .social i {
+          padding: 0 0rem; } }
+      .footer .social i:hover {
+        color: #698996; }
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid #02111b;
+  border-bottom: 2px solid #02111b;
+  border-bottom-right-radius: 5px; }
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 2px solid #02111b;
+  border-bottom: 2px solid #02111b;
+  border-bottom-left-radius: 5px; }
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 7rem;
+  border-right: 2px solid #02111b;
+  border-top: 2px solid #02111b;
+  border-top-right-radius: 5px; }
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 7rem;
+  border-left: 2px solid #02111b;
+  border-top: 2px solid #02111b;
+  border-top-left-radius: 5px; }
