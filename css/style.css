@@ -66,7 +66,7 @@ a {
     transform: translate(0, 0); }
   8.92857% {
     transform: translate(5px, 0); }
-  10.71429% {
+  1D.71429% {
     transform: translate(0, 0); }
   100% {
     transform: translate(0, 0); } }
@@ -95,7 +95,8 @@ a {
     border-radius: 5px;
     border: 2px solid #02111b; }
   .main .first,
-  .main .second {
+  .main .second,
+  .main .timetable {
     grid-column: span 2;
     display: grid;
     grid-gap: 2rem;
@@ -104,7 +105,8 @@ a {
     justify-items: center; }
     @media screen and (max-width: 750px) {
       .main .first,
-      .main .second {
+      .main .second,
+      .main .timetable {
         grid-template-columns: 100%; } }
   .main .third {
     grid-column: span 2; }
@@ -178,3 +180,12 @@ a {
   border-left: 2px solid #02111b;
   border-top: 2px solid #02111b;
   border-top-left-radius: 5px; }
+
+.timetable h2 {
+  font-size: 3.5rem;
+  font-weight: 300; }
+
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-top-width:1px;border-bottom-width:1px;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
